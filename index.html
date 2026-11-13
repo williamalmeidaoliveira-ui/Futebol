@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilo & Tendência - Blog de Moda</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #222222;
+            color: #ffffff;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 16px;
+            border: 5px solid #d4af37; /* Borda em tom dourado elegante */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        main {
+            background-color: #ffffff;
+            color: #333333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 16px;
+            border: 1px solid #ddd;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 8px;
+            float: left;
+            margin-right: 16px;
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+            color: #777777;
+            font-style: italic;
+        }
+
+        .conteudo-post {
+            overflow: hidden; /* Garante o alinhamento com a imagem flutuante */
+        }
+
+        button {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 8px 12px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-right: 8px;
+            margin-top: 15px;
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #e0e0e0;
+        }
+
+        button span {
+            margin-left: 4px;
+            font-weight: bold;
+        }
+
+        article {
+            margin-top: 24px;
+            padding-top: 16px;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>
+    
+        </h1>
+    </header>
+
+    <main>
+        <img src="william">
+        <img src="william">
+    
+        
+        <div class="conteudo-post">
+            <h2>Futebol.</h2> 
+            <p class="artigo-autor">por: william</p>
+            <p>
+
+O futebol é um dos esportes mais populares do mundo. Ele é muito mais do que um simples jogo, pois representa união, amizade, respeito e trabalho em equipe. Milhões de pessoas acompanham seus times e torcem com muita paixão.
+
+Além de ser divertido, o futebol ajuda a melhorar a saúde, desenvolver habilidades e ensinar a importância de trabalhar em grupo. Dentro de campo, os jogadores precisam ter dedicação, disciplina e esforço para alcançar seus objetivos. .</p>
+            
+            <div>
+                <button id="btn-coracao">❤️ <span>0</span></button>
+                <button id="btn-like">👍 <span>0</span></button>
+            </div>
+        </div>
+
+        <article>
+            <h3>futebol</h3>
+            <p>.</p>
+        </article>
+
+    </main>
+
+    <script>
+        // Correção da seleção dos botões e funcionalidade de clique para contar interações
+        const btnCoracao = document.getElementById("btn-coracao");
+        const btnLike = document.getElementById("btn-like");
+
+        btnCoracao.addEventListener("click", () => {
+            const contador = btnCoracao.querySelector("span");
+            contador.textContent = parseInt(contador.textContent) + 1;
+        });
+
+        btnLike.addEventListener("click", () => {
+            const contador = btnLike.querySelector("span");
+            contador.textContent = parseInt(contador.textContent) + 1;
+        });
+    </script>
+</body>
+</html>
